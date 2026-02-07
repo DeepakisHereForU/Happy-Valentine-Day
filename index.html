@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR MY LOVE 💘</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scene Container -->
+    <div class="scene-container">
+        <!-- Background Layers -->
+        <div class="background">
+            <div class="sky"></div>
+            <div class="moon"></div>
+            <div class="stars"></div>
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="trees"></div>
+            <div class="grass"></div>
+            <div class="floating-hearts"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <!-- Title -->
+            <header class="story-header">
+                <h1 class="title">Our Love Story <span class="heart-icon">💕</span></h1>
+                <p class="subtitle">An animated proposal for my favorite person</p>
+            </header>
+
+            <!-- Character Scene -->
+            <div class="character-scene">
+                <!-- Boy Character -->
+                <div class="character boy" id="boyCharacter">
+                    <div class="character-body">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                            </div>
+                            <div class="blush left-blush"></div>
+                            <div class="blush right-blush"></div>
+                            <div class="mouth smile"></div>
+                        </div>
+                        <div class="heart-float">❤️</div>
+                    </div>
+                    <div class="speech-bubble boy-speech" id="boySpeech">
+                        <p>Hi <span class="partner-name">Deepika</span>! I have something to ask you...</p>
+                    </div>
+                </div>
+
+                <!-- Girl Character -->
+                <div class="character girl" id="girlCharacter">
+                    <div class="character-body">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                            </div>
+                            <div class="blush left-blush"></div>
+                            <div class="blush right-blush"></div>
+                            <div class="mouth curious"></div>
+                        </div>
+                    </div>
+                    <div class="speech-bubble girl-speech" id="girlSpeech">
+                        <p>What is it? <i class="fas fa-heart"></i></p>
+                    </div>
+                </div>
+
+                <!-- Walking Path -->
+                <div class="walking-path"></div>
+                
+                <!-- Proposal Box -->
+                <div class="proposal-box" id="proposalBox">
+                    <div class="box-content">
+                        <h2><i class="fas fa-heart"></i> Will You Be My Valentine? <i class="fas fa-heart"></i></h2>
+                        <div class="animated-heart">💖</div>
+                        <p class="proposal-text">I want to make every day feel like Valentine's with you!</p>
+                        
+                        <div class="interactive-elements">
+                            <!-- Response Buttons with Characters -->
+                            <div class="response-options">
+                                <button class="response-btn yes-response" id="yesBtn">
+                                    <div class="btn-character">
+                                        <div class="btn-face happy-face"></div>
+                                    </div>
+                                    <span>YES! <i class="fas fa-heart"></i></span>
+                                </button>
+                                
+                                <button class="response-btn no-response" id="noBtn">
+                                    <div class="btn-character">
+                                        <div class="btn-face shy-face"></div>
+                                    </div>
+                                    <span>Hmm... <i class="fas fa-question"></i></span>
+                                </button>
+                            </div>
+
+                            <!-- Gift Box -->
+                            <div class="gift-container">
+                                <div class="gift-box" id="giftBox">
+                                    <div class="gift-ribbon">
+                                        <div class="ribbon-center"></div>
+                                        <div class="ribbon-left"></div>
+                                        <div class="ribbon-right"></div>
+                                    </div>
+                                    <div class="gift-lid"></div>
+                                    <div class="gift-body"></div>
+                                    <button class="open-gift-btn" id="openGift">
+                                        <i class="fas fa-gift"></i> Open My Gift
+                                    </button>
+                                </div>
+                                <div class="gift-message hidden" id="giftMessage">
+                                    <h3>My Gift to You:</h3>
+                                    <p>All my love, forever and always! 💝</p>
+                                    <div class="gift-content">
+                                        <i class="fas fa-heart gift-heart"></i>
+                                        <i class="fas fa-star gift-star"></i>
+                                        <i class="fas fa-heart gift-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar (Story Progress) -->
+                <div class="story-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <span class="step active">Meet</span>
+                        <span class="step">Chat</span>
+                        <span class="step">Propose</span>
+                        <span class="step">Celebrate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="control-btn" id="musicBtn">
+                    <i class="fas fa-music"></i> Toggle Music
+                </button>
+                <button class="control-btn" id="animateBtn">
+                    <i class="fas fa-magic"></i> More Magic!
+                </button>
+            </div>
+
+            <!-- Celebration Area -->
+            <div class="celebration-area hidden" id="celebrationArea">
+                <div class="fireworks"></div>
+                <div class="confetti"></div>
+                <div class="dancing-characters">
+                    <div class="dancer boy-dancer">💃</div>
+                    <div class="dancer girl-dancer">🕺</div>
+                </div>
+                <h2 class="celebration-text">We're Valentine's! 🎉💕</h2>
+                <p class="celebration-subtext">Let the celebration begin!</p>
+            </div>
+        </div>
+
+        <!-- Audio Elements -->
+        <audio id="bgMusic" loop>
+            <source src="https://assets.codepen.io/1468070/Springtime.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="heartSound">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-soft-758.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="celebrationSound">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
